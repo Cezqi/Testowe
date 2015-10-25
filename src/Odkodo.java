@@ -11,13 +11,7 @@ public class Odkodo{
 	public static String znaki ="01100001";
 	public static void main(String[] args) throws IOException
 	{ System.getProperty("user.dir");
-		/*
-		 * String s1 = "0101";
-			String s2 = "1100";
-			String xor = Integer.toBinaryString(Integer.parseInt(s1, 2) ^ Integer.parseInt(s2, 2), 2);
-			System.out.println(xor);
-		 * 
-		 */
+		
 	     
 		 File inputFile = null;
 		 File inputFile2= null;
@@ -109,7 +103,7 @@ public class Odkodo{
             			 alternatywy[x][j]="-";
             		 if(przypuszczalne.size()<5 && przypuszczalne.size()>0)
             		 for(int k: przypuszczalne)
-              		  {   System.out.println( x+ " fff "+ f + ": " + alfabet(k));
+              		  {  // System.out.println( x+ " fff "+ f + ": " + alfabet(k));
             			alternatywy[x][f]=alfabet(k);
             			f++;
               		  }
@@ -117,7 +111,7 @@ public class Odkodo{
             		}
             	    
             	
-            	 System.out.println("wynik cz¹stkowy  " +  wynik[x] + " " + alfabet(wynik[x]));
+            	// System.out.println("wynik cz¹stkowy  " +  wynik[x] + " " + alfabet(wynik[x]));
             	przypuszczalne.clear();
             	zapas.clear();
             }
@@ -159,7 +153,8 @@ public class Odkodo{
 			}
 		 System.out.println( "");
 		 }
-	
+		System.out.println("Prawid³owy wynik:");
+		System.out.println("Miriam Shaded: \"Barack Obama jest SUNNIT¥! Wszyscy to wiedz¹!\"");
 	}
 	
 	public static String alfabet(int i)
